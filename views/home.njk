@@ -1,0 +1,12 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<h1>Iconic surf spots</h1>
+
+{%for item in mySpots%}
+<ul>
+  <li><a href=/spots/{{item.name}}>{{item.name}}</a></li>
+</ul>
+{% endfor %}
+
+{% endblock %}
